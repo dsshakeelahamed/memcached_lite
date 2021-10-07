@@ -74,4 +74,4 @@ class InteractiveClient:
 
 
 if __name__ == "__main__":
-    InteractiveClient("127.0.0.1", 9889)
+    InteractiveClient(const.server_address, 9889)
