@@ -78,7 +78,7 @@ class Client:
 
 
 if __name__ == '__main__':
-    c = Client('127.0.0.1', 9889)
+    c = Client(const.server_address, 9889)
     print(c.get("test_key"))
     print(c.set("key1", "abcd", 0, 900))
     print(c.get("key1"))

@@ -1,4 +1,6 @@
-server_address = ''
+import os
+
+server_address = os.getenv("SERVER_HOSTNAME")
 server_port = 9889
 methods = ['set', 'get', 'close']
 base_path = "/tmp"
