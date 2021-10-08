@@ -7,9 +7,9 @@ import const
 class TestMemcache(unittest.TestCase):
     def setUp(self):
         #Using client model developed as part of asssignment
-        self.client_local = Client_local('127.0.0.1', 9889)
+        self.client_local = Client_local(const.server_address, 9889)
         # Using pymemcache Client
-        self.client_regular = Client(('127.0.0.1', 9889))
+        self.client_regular = Client((const.server_address, 9889))
 
     def tearDown(self):
         self.client_regular.close()
